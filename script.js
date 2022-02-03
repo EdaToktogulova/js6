@@ -1,6 +1,6 @@
 //  Variables
 var emptyVariable;
-var message = "Hello world";
+var message = "hi world";
 var firstName, lastName = "Toktogulova";
 
 // Number - 2 ** 53 - 1
@@ -11,9 +11,9 @@ var exampleNumber3 = Infinity; // 1 / 0
 var exampleNumber4 = NaN ; // Not a Number
 
 // String
-var exampleString1 = "Hello world";
-var exampleString2 = 'Hello world';
-var exampleString3 = `Hello world`;
+var exampleString1 = "hi world";
+var exampleString2 = 'hi world';
+var exampleString3 = `hi world`;
 var exampleString4 = "4";
 
 // Boolen 
@@ -38,10 +38,10 @@ var exampleString4 = "4";
 //  document.write(typeof document); // object
 
 // Output
-// alert("Hello world");
-// var result = prompt("Hello world"); String
-// var result = confirm("Hello world"); Boolean
-// document.write("Hello world");
+// alert("hi world");
+// var result = prompt("hi world"); String
+// var result = confirm("hi world"); Boolean
+// document.write("hi world");
 
 var exampleTypeConversion1 = 5 + "5";
 var exampleTypeConversion2 = 5 + 5 + "5";
@@ -78,7 +78,7 @@ var exampleMath6 = 6 % 2; // 0
 
 // Exponent
 var exampleMath7 = 2 ** 4;
-// document.write("Hello" + "5");
+// document.write("hi" + "5");
 // document.write(5 * (2 - 3) - 5);
 
 // Fast modify
@@ -93,3 +93,61 @@ exampleMath9 --;
 ++exampleMath9;
 --exampleMath9;
 
+// Comparisons
+var exampleComparison1 = 6 > 5; // true
+var exampleComparison2 = 6 < 5; // false
+var exampleComparison3 = 6 >= 5; // true
+var exampleComparison4 = 6 <= 5; // false
+var exampleComparison5 = 5 === 5; // true
+var exampleComparison6 = 5 !== 5; // false
+var exampleComparison7 = "5" == 5; // true
+var exampleComparison8 = "5" != 5; // true
+
+// document.write("5" === 5);
+
+//If else
+// if (5 > 3) {
+    // document.write("hi world");
+// }
+// else {
+//     document.write("Bye world");
+// }
+/*
+Если чайник кипит
+ Выключить газ
+Иначе 
+ Проверить позже
+ */
+// var age = prompt("How old are you?");
+// var votingYears = age - 18;
+// if (votingYears === NaN) {
+//     alert ("Wrong input. Numbers only.");
+// }
+// else if (votingYears < 0) {
+//     alert("You are too young to vote!");
+// }
+// else {
+//     alert("You could've vote for" + votingYears + "years");
+// }
+/*
+Если ползователь ввел число 13
+   Спросить снова
+ */
+// var userNumber; // undefined
+// while (userNumber != 13) {
+//     userNumber = prompt("Write thirteen as a number");
+// }
+
+/*
+Начни с числа один 1
+Увеличивать число на единицу
+Пока число меньше или равно 3
+*/
+for (var i=10; i>= 1; i--) {
+    document.write(i + " ");
+}
+
+//Functions
+function sayhi(name, timeOfDay) {
+    document.write(`hi ${name}, have a great`) 
+}
